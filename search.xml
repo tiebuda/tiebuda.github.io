@@ -116,4 +116,32 @@
         <tag>转载</tag>
       </tags>
   </entry>
+  <entry>
+    <title>hexo配置</title>
+    <url>/2021/09/23/Hexo-Next%E8%AE%BE%E7%BD%AE%E5%8D%9A%E5%AE%A2%E8%83%8C%E6%99%AF/</url>
+    <content><![CDATA[<h1 id="Hexo-Next设置博客背景"><a href="#Hexo-Next设置博客背景" class="headerlink" title="Hexo-Next设置博客背景"></a>Hexo-Next设置博客背景</h1><h2 id="背景图命名"><a href="#背景图命名" class="headerlink" title="背景图命名"></a>背景图命名</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">background.jpg</span><br></pre></td></tr></table></figure>
+
+<h2 id="背景存放URL"><a href="#背景存放URL" class="headerlink" title="背景存放URL"></a>背景存放URL</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">themes/next/source/images</span><br></pre></td></tr></table></figure>
+
+<h2 id="代码改动URL"><a href="#代码改动URL" class="headerlink" title="代码改动URL"></a>代码改动URL</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">themes/next/source/css/ _custom/custom.styl</span><br></pre></td></tr></table></figure>
+
+<p>注：<code>custom.styl</code> 是Next 留给用户自己个性化定制一些样式的文件</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>:<span class="built_in">url</span>(<span class="string">/images/background.jpg</span>);</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">    <span class="attribute">background-attachment</span>:fixed; //不重复</span><br><span class="line">    <span class="attribute">background-size</span>: cover;      //填充</span><br><span class="line">    <span class="attribute">background-position</span>:<span class="number">50%</span> <span class="number">50%</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//文章内容的透明度设置</span><br><span class="line"><span class="selector-class">.content-wrap</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.9</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边框的透明度设置</span><br><span class="line"><span class="selector-class">.sidebar</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.9</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//菜单栏的透明度设置</span><br><span class="line"><span class="selector-class">.header-inner</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">0.9</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//搜索框（local-search）的透明度设置</span><br><span class="line"><span class="selector-class">.popup</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.9</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>background:url</code> 为图片路径，也可以直接使用链接。</li>
+<li><code>background-repeat</code>：若果背景图片不能全屏，那么是否平铺显示，充满屏幕</li>
+<li><code>background-attachment</code>：背景是否随着网页上下滚动而滚动，fixed 为固定</li>
+<li><code>background-size</code>：图片展示大小，这里设置 100%，100% 的意义为：如果背景图片不能全屏，那么是否通过拉伸的方式将背景强制拉伸至全屏显示。</li>
+</ul>
+<h2 id="参考来源"><a href="#参考来源" class="headerlink" title="参考来源"></a>参考来源</h2><p><a href="https://tding.top/archives/761b6f4d.html">Hexo-NexT 设置博客背景图片</a></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>原创</tag>
+      </tags>
+  </entry>
 </search>
