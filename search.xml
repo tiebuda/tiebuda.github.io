@@ -15,6 +15,34 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo配置</title>
+    <url>/2021/09/23/hexo%E7%BE%8E%E5%8C%96%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="修改圆形头像"><a href="#修改圆形头像" class="headerlink" title="修改圆形头像"></a>修改圆形头像</h1><span id="more"></span>
+<p>博客目录/themes/next/source/css/_common/components/sidebar/sidebar-author.styl</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">替换 site-author-<span class="selector-tag">img</span> 属性</span><br><span class="line"><span class="selector-class">.site-author-image</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">padding</span>: $site-author-image-padding;</span><br><span class="line">  <span class="attribute">max-width</span>: $site-author-image-width;</span><br><span class="line">  <span class="attribute">height</span>: $site-author-image-height;</span><br><span class="line">  <span class="attribute">border</span>: site-author-image-border-color;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span></span><br><span class="line">  webkit-transition: <span class="number">1.4s</span> all;</span><br><span class="line">  moz-<span class="attribute">transition</span>: <span class="number">1.4s</span> all;</span><br><span class="line">  ms-<span class="attribute">transition</span>: <span class="number">1.4s</span> all;</span><br><span class="line">  <span class="attribute">transition</span>: <span class="number">1.4s</span> all;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="本地搜索"><a href="#本地搜索" class="headerlink" title="本地搜索"></a>本地搜索</h1><p>npm install hexo-generator-searchdb –save</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 100</span><br></pre></td></tr></table></figure>
+
+<p>修改主题配置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">enable: true</span><br></pre></td></tr></table></figure>
+
+<h1 id="添加字数统计"><a href="#添加字数统计" class="headerlink" title="添加字数统计"></a>添加字数统计</h1><p> npm install hexo-wordcount –save</p>
+<p>修改主题配置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_wordcount:</span><br><span class="line">  item_text: true</span><br><span class="line">  wordcount: true</span><br><span class="line">  min2read: true</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>原创</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第一章 星空中的青铜巨棺</title>
     <url>/2021/09/23/my01/</url>
     <content><![CDATA[<p> 生命是世间最伟大的奇迹。<br>四方上下曰宇。宇虽有实，而无定处可求。往古来今曰宙。宙虽有增长，不知其始之所至。<br>浩瀚的宇宙，无垠的星空，许多科学家推测，地球可能是唯一的生命源地。<br>人类其实很孤独。在苍茫的天宇中，虽然有亿万星辰，但是却很难寻到第二颗生命源星。</p>
